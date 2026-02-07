@@ -1,78 +1,44 @@
-# ==========================
-# Node.js Dependencies
-# ==========================
+# Node & Next.js
 node_modules/
-package-lock.json
-yarn.lock
-pnpm-lock.yaml
-
-# ==========================
-# Environment variables
-# ==========================
-.env
-.env.local
-.env.development
-.env.production
-.env.test
-!.env.example  # keep example file
-
-# ==========================
-# Next.js build & cache
-# ==========================
 .next/
 out/
-dist/
-.cache/
-.vercel/
-
-# ==========================
-# Frontend build logs & temp
-# ==========================
 build/
+dist/
 *.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-*.tmp
-*.bak
+
+# Environment
+.env*
+!.env.example
+
+# TypeScript
+*.tsbuildinfo
+
+# IDEs
+.vscode/
+.idea/
 *.swp
 *~
 
-# ==========================
-# Coverage & test results
-# ==========================
-coverage/
-.nyc_output/
-junit.xml
-*.gcov
-*.lcov
-
-# ==========================
-# OS generated files
-# ==========================
+# OS files
 .DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
 Thumbs.db
 
-# ==========================
-# IDE / Editor folders
-# ==========================
-.vscode/
-.idea/
-*.sublime-project
-*.sublime-workspace
+# Coverage & Testing
+coverage/
+.pytest_cache/
+.hypothesis/
+*.gcov
+*.lcov
+*.tmp
+*.bak
 
-# ==========================
-# Explicitly allow API client files
-# ==========================
-!frontend/lib/api.ts
-!frontend/lib/mock-api.ts
+# FastAPI / Backend DB
+*.db
+*.db-journal
 
-# ==========================
-# Optional: ignore other folders you don't want in git
-# ==========================
-# frontend/build_output.txt  # uncomment if you don't want to commit build logs
+# Vercel / Cache
+.cache/
+.vercel/

@@ -1,105 +1,44 @@
-# ====================
-# Python
-# ====================
-__pycache__/
-*.py[cod]
-*$py.class
-*.so
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-MANIFEST
-venv/
-env/
-ENV/
-.venv/
-.env/
-
-# ====================
-# Next.js / Node.js
-# ====================
+# Node & Next.js
+node_modules/
 .next/
 out/
-node_modules/
+build/
+dist/
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-.pnp/
-.pnp.js
-coverage/
-build/
-dist/
 
-# Allow frontend/lib TypeScript files
-!frontend/lib/*.ts
-
-# ====================
-# TypeScript
-# ====================
-*.tsbuildinfo
-*.min.js
-*.min.js.map
-*.js.map
-
-# ====================
-# IDE / Editor
-# ====================
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
-
-# ====================
-# OS
-# ====================
-.DS_Store
-Thumbs.db
-
-# ====================
-# Logs
-# ====================
-*.log
-logs/
-
-# ====================
-# Environment variables
-# ====================
+# Environment
 .env*
 !.env.example
 
-# ====================
-# Coverage
-# ====================
-.coverage
-htmlcov/
-.coverage.*
-.cov-report/
+# TypeScript
+*.tsbuildinfo
 
-# ====================
-# FastAPI / Uvicorn
-# ====================
+# IDEs
+.vscode/
+.idea/
+*.swp
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Coverage & Testing
+coverage/
+.pytest_cache/
+.hypothesis/
+*.gcov
+*.lcov
+*.tmp
+*.bak
+
+# FastAPI / Backend DB
 *.db
 *.db-journal
 
-# ====================
-# Testing
-# ====================
-.pytest_cache/
-.hypothesis/
-
-# ====================
-# Windows reserved
-# ====================
-nul
+# Vercel / Cache
+.cache/
+.vercel/
