@@ -7,6 +7,9 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: false,
   },
+  outputFileTracingIncludes: {
+    '/': ['./node_modules/**/*'],
+  },
   // Configure webpack to handle module resolution properly
   webpack: (config, { isServer }) => {
     if (!isServer) {
