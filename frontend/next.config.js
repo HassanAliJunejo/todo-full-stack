@@ -4,22 +4,7 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: false,
   },
-  eslint: {
-    ignoreDuringBuilds: false,
-  },
-  outputFileTracingIncludes: {
-    '/': ['./node_modules/**/*'],
-  },
-  // Configure webpack to handle module resolution properly
-  webpack: (config, { isServer }) => {
-    if (!isServer) {
-      config.resolve.fallback = {
-        ...config.resolve.fallback,
-        fs: false,
-      };
-    }
-    return config;
-  },
+  turbopack: {},
 };
 
 module.exports = nextConfig;
